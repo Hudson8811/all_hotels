@@ -1,0 +1,47 @@
+.footer {
+  background: #231a18;
+  height: 97px;
+
+  @include tMax {
+    height: 70px;
+  }
+
+  @include mMax {
+    height: auto;
+    padding: 24px 0 30px;
+  }
+
+  .container {
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    @include mMax {
+      display: block;
+    }
+  }
+
+  @include tMax {
+    .header-logo {
+      display: none;
+    }
+
+    .header-soc {
+      display: flex;
+      margin-left: auto;
+    }
+  }
+
+  @include mMax {
+    .header-phone {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 35px;
+    }
+
+    .header-soc {
+      justify-content: center;
+    }
+  }
+}
